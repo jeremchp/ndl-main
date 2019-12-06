@@ -1,19 +1,8 @@
-body 
-{
-    font-family : "Snell Roundhand", cursive;
-}
-
-h1
-{
-    text-align: center;
-}
-
-.other
+other
 {
     text-align: center;
     text-justify: inter-word;
 }
-
 
 form {
     /* Uniquement centrer le formulaire sur la page */
@@ -22,6 +11,7 @@ form {
     /* Encadré pour voir les limites du formulaire */
     padding: 1em;
     border: 1px solid #CCC;
+    
     border-radius: 1em;
   }
   
@@ -71,4 +61,179 @@ form {
     /* Cette marge supplémentaire représente grosso modo le même espace que celui
        entre les étiquettes et les champs texte */
     margin-left: .5em;
+
   }
+
+  .Other
+  {
+    text-align: center;
+    font-family: "fantasy";
+    background-color: white;
+  }
+
+
+/**************************************************/
+.aller
+{
+background-color: white;
+margin-left: 15%;
+margin-right: 15%;
+height: 550px;
+}
+
+
+body
+{
+  /*background-color:white;*/
+  font-family : "fantasy";
+  background: url('./img/fond.webp');
+  background-repeat:no-repeat;
+  background-size: 120%;
+  background-color:white;
+}
+
+
+header{
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+footer{
+  background-color: white;
+  text-align: center;
+  opacity: 45%;
+  margin-left: 10%;
+  margin-right: 15%;
+}
+
+#nav
+{
+    font-size: 30px;
+    padding : 0;
+    margin : 0;
+    text-align: center;
+    
+}
+#nav li
+{
+    
+    display : inline;
+    list-style : none;
+}
+#nav a
+{
+    display : inline-block;
+    margin : 0 30px;
+    text-decoration:  none;
+    color:#db7414;
+}
+h1
+{
+    text-align: center;
+    color: #ecc427; 
+    font: bold 52px Helvetica, Arial, Sans-Serif;
+    text-shadow: 1px 1px #481c5a, 
+                 2px 2px #481c5a, 
+                 3px 3px #481c5a;   
+       
+    
+}
+h1:hover
+{
+    position: relative; 
+    top: -3px; 
+    left: -3px; 
+    text-shadow: 1px 1px #481c5a, 
+                 2px 2px #481c5a, 
+                 3px 3px #481c5a, 
+                 4px 4px #481c5a, 
+                 5px 5px #481c5a, 
+                 6px 6px #481c5a
+}
+
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  height: 250px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  position : absolute;
+  top:50px;
+  left:1458px;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+#JC{
+  padding: 25px;
+  overflow:hidden;
+  -webkit-border-radius:25px;
+  -moz-border-radius:50px;
+  border-radius:200px;
+  float: left;
+  position : absolute;
+  top:50px;
+  left:1350px;
+}
+
+.MASTA
+{
+  font-size: 20px;
+  text-align: center;
+}
+
+.inline-block {
+  display: inline-block;
+}

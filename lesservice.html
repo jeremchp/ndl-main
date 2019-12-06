@@ -2,83 +2,214 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylelesservices.css" />
+    <link rel="stylesheet" href="./stylelesservices.css" />
     <title>Les différents services permettant de sortir de la précarité étudiante</title>
-    <META HTTP-EQUIV="Refresh" CONTENT="4; URL=file:///G:/Nuitdel'info/lesservice.html">
     <!-- Penser à add le menu-->
   </head>
   <header>
     <h1>Nuit de L'info Génération Miracle</h1>
       <ul id="nav">
-          <li><a href="#">Accueil</a></li>
-          <li><a href="fbdizisbz">Matchmaking</a></li>
-          <li><a href="./lesservice.html">Services disponibles</a></li>
+          <li><a href="./acceuil.html">Accueil</a></li>
+          <li><a href="acceuil.html">Matchmaking</a></li>
+          <li><a href="#">Services disponibles</a></li>
           <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./inscription.html">Inscription</a></li>
+          <li><a href="./inscription.php">Inscription</a></li>
       </ul>
   </header>
 
   <body>
+
     <div id="corpsText">
-      <div class="Etudiants">
-        <h2>Les différentes aides proposées par l'Etat</h2>
-        <p  class="Description">Pour vous aider à sortirt de la précarité étudiante, l'Etat a mis en oeuvre plusieurs aides.
-        Celles-ci peuvent être pécunières, mais aussi psychlogiques.</p>
+      <div class="debut">
+        <h2 id="titre">Les différentes aides proposées par l'Etat</h2>
+      <p  class="Description">Pour vous aider à sortirt de la précarité étudiante, l'Etat a mis en oeuvre plusieurs aides.
+      Celles-ci peuvent être pécunières, mais aussi psychlogiques.</p>
+    </div>
         <div class="Services">
           <div class="OneService">
             <h2>Les bourses étudiantes</h2>
             <div id="bourse" onclick=afficheBourse()>
-              <a href="#">Bourses</a>
+              <a href="#">Premiere étape pour une bourse</a>
             </div>
             <div id="bourseInfo" style="display:none">
+              <div>
+                <p>
+                  La bourse d'enseignement supérieur sur critères sociaux est accordée à l'étudiant confronté à des difficultés matérielles ne lui permettant pas d'entreprendre ou de poursuivre des études supérieures. 
+                  Elle constitue une aide complémentaire à celle de la famille. 
+                  À ce titre, elle ne peut se substituer à l'obligation alimentaire telle que définie par les dispositions des articles 203 et 371-2 du Code civil qui imposent aux parents d'assurer l'entretien de leurs enfants, même majeurs, tant que ces derniers ne sont pas en mesure de subvenir à leurs propres besoins. 
+                  Les revenus ainsi que les charges de la famille sont pris en compte pour déterminer le taux de la bourse fixé en application d'un barème national.
+                </p>
+              </div>
+              
               <div class="sous-menu">
-                <a href="#">Sous Menu</a>
+                <a href="https://simulateur.lescrous.fr/">Simulation des bourses étudiante</a>
               </div>
               <div class="sous-menu">
-                <a href="#">Sous Menu</a>
+                <a href="https://www.etudiant.gouv.fr/pid33629-cid111606/constituez-votre-dossier-social-etudiant-dse.html">Constituez un dossier de bourse</a>
               </div>
             </div>
           </div>
         
           <div class="SecondService">
-            <h2>Les APLs</h2>
+            <h2>Les APLs (Aide personnalisé au logement)</h2>
             <div id="apl" onclick=afficheAPL()>
               <a href="#">APL</a>
             </div>
             <div id="aplInfo" style="display:none">
+                <p>
+                    L'aide personnalisée au logement (APL) est une aide financière destinée à réduire le montant de votre loyer, mensualité d'emprunt ou redevance. 
+                    Elle est versée en raison de la situation de votre logement et ce, quelle que soit votre situation familiale : célibataire, marié, avec ou sans personne à charge. 
+                    Les conditions d'attribution diffèrent selon que vous êtes en location, que vous accédez à la propriété ou que vous résidez en foyer.
+                </p>
                 <div class="sous-menu">
-                  <a href="#">Sous Menu</a>
+                  <a href="https://demarchesadministratives.fr/demarches/apl-pour-les-etudiants-conditions-type-de-logement-et-montant">Conditions pour l'obtention des APLs</a>
                 </div>
             <div class="sous-menu">
-                <a href="#">Sous Menu</a>
+                <a href="https://www.location-etudiant.fr/calcul-montant-aide-logement.html">Calculer le montant de vos APLs</a>
           </div>
         </div>
       </div>
 
         
-        <div class="SecondService">
+        <div class="TroisiemeService">
+            <h2>Prêts étudiants</h2>
+            <div id="prets" onclick=affichePrets()>
+              <a href="#">Cliquer pour dérouler</a>
+            </div>
+                <div id="pretInfo" style="display:none">
+                  <p>
+                    Un prêt étudiant est un prêt bancaire destiné à financer des études supérieures. 
+                    Ce type de prêt se caractérise généralement par des taux d'intérêt bas et un remboursement différé de la somme empruntée, débutant généralement à l'entrée de l'emprunteur dans la vie active.
+                  </p> 
+                    <div class="sous-menu">
+                        <a href="https://www.etudiant.gouv.fr/cid96244/le-pret-etudiant-garanti-par-etat.html">Les prêts étudiants : pour qui, comment, combien ?</a>
+                    </div>
+                    <div class="sous-menu">
+                            <a href="https://www.letudiant.fr/lifestyle/aides-financieres/pret-etudiant-comment-ca-marche.html">Prêts étudiants : comment choisir ?</a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="QuatriemeService">
             <h2>Services d'aide psychologique</h2>
             <div id="Services" onclick=afficheService()>
               <a href="#">Cliquer pour dérouler</a>
             </div>
                 <div id="serviceInfo" style="display:none">
+                  <p>
+                    Si la santé des étudiants est plutôt bonne, le moral l'est parfois un peu moins.
+                    Et si le stress lié aux études est tout à fait normal – et même moteur – en revanche, le mal-être peut vite être destructeur.
+                    En cas de gros coup de blues, mieux vaut donc en parler.
+                    Des structures spécialisées existent, comme les BAPU (Bureaux d’Aide Psychologique Universitaires), les SIUMPPS (Services Inter Universitaires de Médecine Préventive et de Promotion de la Santé) ou les Relais Etudiants-Lycéens de la Fondation Santé des Etudiants de France (FSEF).
+                    N’hésitez surtout pas à les contacter, des professionnels sauront vous écouter et vous apporter un soutien psychologique
+                  </p>
                     <div class="sous-menu">
                         <a href="https://www.alcooliques-anonymes.fr/">Les alcooliques anonymes</a>
                     </div>
                     <div class="sous-menu">
-                            <a href="./JeanCloud.html">Vous manquez d'eau ?</a>
+                            <a href="https://www.studyrama.com/vie-etudiante/sante-se-proteger/objectif-sante/quels-services-d-aide-psychologique-pour-les-etudiants-101583">Quels services d'aides psychologique pour les étudiants</a>
+                    </div>
+                    <div class="sous-menu">
+                        <a href="./JeanCloud.html">Vous manquez d'eau ?</a>
+                </div>
+                </div>
+        </div>
+
+        <div class="CinquiemeService">
+            <h2>Mutuelle étudiante</h2>
+            <div id="Mutuelle" onclick=afficheMutuelle()>
+              <a href="#">Cliquer pour dérouler</a>
+            </div>
+                <div id="mutuelleInfo" style="display:none">
+                  <p>
+                    Comme son nom l’indique, une mutuelle étudiante concerne les étudiants inscrits dans un établissement d’enseignement supérieur (université, I.U.T., établissement préparant au B.T.S., classe préparatoire…). 
+                    Une mutuelle étudiante complémentaire vise à couvrir l’étudiant en complément du régime obligatoire de la Sécurité Sociale auquel il reste affilié.
+                  </p>
+                    <div class="sous-menu">
+                        <a href="https://www.studyrama.com/vie-etudiante/mutuelle-etudiante-comment-choisir">Mutuelle étudiante : comment choisir ?</a>
+                    </div>
+                    <div class="sous-menu">
+                            <a href="https://www.lelynx.fr/mutuelle-sante/profil/jeune/etudiant/">Choisir sa mutuelle étudiante : comment choisir ?</a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="SixiemeService">
+            <h2>Carte de réduction de la SNCF</h2>
+            <div id="SNCF" onclick=afficheSNCF()>
+              <a href="#">Cliquer pour dérouler</a>
+            </div>
+                <div id="sncfInfo" style="display:none">
+                  <p>
+                    Les jeunes peuvent voyager en bénéficiant de 25% à 60% de réduction sur leurs billets sur leurs trajets en TGV, TER et Intercités. 
+                    Depuis le 9 mai, la carte Avantage Jeune remplace la carte Jeune SNCF destinée aux 12 à 27 ans, jusqu'à la veille de leurs 28 ans.
+                  </p>
+                    <div class="sous-menu">
+                        <a href="https://www.oui.sncf/train/carte-abonnement-train">Cartes de réduction et abonnements SNCF</a>
+                    </div>
+                    <div class="sous-menu">
+                            <a href="https://www.service-public.fr/particuliers/actualites/A13398">SNCF : quelles nouvelles cartes de réduction ?</a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="SeptiemeService">
+            <h2>Dossier Loca Pass</h2>
+            <div id="loca" onclick=afficheLoca()>
+              <a href="#">Cliquer pour dérouler</a>
+            </div>
+                <div id="locaInfo" style="display:none">
+                  <p>
+                    Le Locapass est un systeme de cautionnement pour la location de logements. 
+                    Il permet également de financer, par un prêt, la caution exigée par le bailleur. 
+                    L'aide Locapass est financé par le 1% logement, un fonds alimenté par les entreprises privées pour l'aide au logement de leurs salariésLe Locapass est un systeme de cautionnement pour la location de logements. 
+                    Il permet également de financer, par un prêt, la caution exigée par le bailleur. 
+                    L'aide Locapass est financé par le 1% logement, un fonds alimenté par les entreprises privées pour l'aide au logement de leurs salariés.
+                  </p>
+                    <div class="sous-menu">
+                        <a href="https://locapass.actionlogement.fr/">Tester votre éligibilité à l'avance Loca-Pass</a>
+                    </div>
+                    <div class="sous-menu">
+                            <a href="https://www.aide-sociale.fr/dossier-locapass-demande/">Le Loca-Pass : Le formulaire et conditions de l'aide</a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="HuitiemeService">
+            <h2>Examen médical gratuit</h2>
+            <div id="examen" onclick=afficheExamen()>
+              <a href="#">Cliquer pour dérouler</a>
+            </div>
+                <div id="examenInfo" style="display:none">
+                  <p>
+                    En France, toute personne affiliée au régime général de la sécurité sociale peut bénéficier gratuitement d’un bilan de santé. 
+                    Vous pouvez bénéficier de ce bilan tous les 5 ans, et même à fréquence plus régulière si votre état de santé est fragile.
+                    C’est l’article L321-3 du Code de la sécurité sociale qui prévoit la possibilité d’obtenir cet examen de santé. 
+                    Chaque assuré ainsi que les personnes à sa charge peuvent donc demander à bénéficier de ce bilan afin de faire le point sur leur santé.                     
+                    C’est votre caisse primaire d’assurance maladie qui se charge de cette démarche, en vous invitant à vous rendre à l’un des Centres d’Examens Santé de votre zone géographique.
+                  </p>
+                    <div class="sous-menu">
+                        <a href="https://www.service-public.fr/particuliers/vosdroits/F170">Informations sur le bilan santé et l'examen de prévention en santé</a>
+                    </div>
+                    <div class="sous-menu">
+                            <a href="https://www.aide-sociale.fr/bilan-sante-cpam-gratuit/">Bilan de santé gratuit :  Profitez d’un examen périodique de santé gratuitement avec la CPAM</a>
                     </div>
                 </div>
         </div>
       
       </div>
-        <div class="popup" onclick=showPopup()><img id="JC" src="./img/JeanCloud.png">
-          <span class="popuptext" id="myPopup">A Simple Popup!</span>
+        <div class="popup" ><img id="JC" src="./img/JeanCloud.png" onclick=showPopup()>
+          <span class="popuptext" id="myPopup"><div id=botQ>
+              <p class="messageBot">Bonjour, que puis-je faire pour vous ?</p>
+              <p class="messageChoixReponse">J'ai un problème</p>
+              <p class="messageChoixReponse">Je souhaite aider</p>
+              <script type="text/javascript" src="js.js"></script>
+          </div>
+        </span>
         </div>
       
     <script type="text/javascript" src="messervices.js"></script>
       </div>
-    </div>
   </body>
 </html>
 
