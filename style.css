@@ -1,0 +1,291 @@
+body
+{
+  /*background-color:white;*/
+  font-family : "Snell Roundhand", cursive;
+  background: url('./img/fond.webp');
+  background-repeat:no-repeat;
+  background-size: 100%;
+}
+
+
+header{
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+footer{
+  background-color: white;
+  text-align: center;
+  opacity: 45%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#nav
+{
+    font-size: 30px;
+    color : blue;
+    padding : 0;
+    margin : 0;
+    text-align: center;
+    
+}
+#nav li
+{
+    
+    display : inline;
+    list-style : none;
+}
+#nav a
+{
+    display : inline-block;
+    margin : 0 30px;
+    text-decoration:  none;
+    color:#db7414;
+}
+h1
+{
+    text-align: center;
+    color: #ecc427; 
+    font: bold 52px Helvetica, Arial, Sans-Serif;
+    text-shadow: 1px 1px #481c5a, 
+                 2px 2px #481c5a, 
+                 3px 3px #481c5a;   
+       
+    
+}
+h1:hover
+{
+    position: relative; 
+    top: -3px; 
+    left: -3px; 
+    text-shadow: 1px 1px #481c5a, 
+                 2px 2px #481c5a, 
+                 3px 3px #481c5a, 
+                 4px 4px #481c5a, 
+                 5px 5px #481c5a, 
+                 6px 6px #481c5a
+}
+
+
+#corpsText{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    /*background-color: white;*/
+    background-image:url('./img/daVinciCloud.svg');
+    
+    background-color: white;
+    height: 1100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*opacity: 90%;*/
+
+}
+
+.Etudiants{
+  grid-column: 1;
+  margin-left: 5%;
+  margin-top: 15%;
+}
+
+.Solutions{
+  grid-column: 2;
+  margin-top: 15%;
+  font-size: 28px;
+  
+  color: #555;
+  font-size: 22px;
+  padding: 0 !important;
+  width: 600px;
+  font-family: courier, monospace;
+  /*border: 1px solid #dedede; */
+
+}
+
+.Solutions li
+{
+  list-style: none;
+  border-bottom: 1px dotted #ccc;
+  text-indent: 25px;
+  height: auto;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.Solutions .lines {
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 2px;
+  float: left;
+  height: 495px;
+  margin-left: 40px;
+}​
+
+.genreH3
+{
+  text-align: center;
+  text-indent: 25px;
+  font-family: courier, monospace;
+  margin-left: 600px;
+
+
+}
+
+.Solutions ul{
+  margin-left: 10%;
+}
+
+
+.postit {
+  line-height: 1;
+  text-align:center;     
+  width: 275px;    
+  margin-left: 150px;    
+  min-height:250px;
+  max-height:250px;
+  padding-top:25px;
+  position: relative;   
+  border:1px solid #E8E8E8;  
+  border-top:60px solid #fdfd86;
+  font-family:'Reenie Beanie';    
+  font-size:22px;      
+  border-bottom-right-radius: 60px 5px;
+  display:inline-block;    
+   background: #ffff88; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#ffff88), color-stop(82%,#ffff88), color-stop(82%,#ffff88), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* IE10+ */
+background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+padding: 30px;
+
+}
+ 
+.postit:after {     
+   content: "";
+  position:absolute;
+  z-index:-1;
+  right:-0px; bottom:20px;
+  width:200px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
+-moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+ -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+      -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+     -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+         transform: matrix(-1, -0.1, 0, 1, 0, 0);
+}
+
+.roundedImage{
+  overflow:hidden;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+  width:150px;
+  height:150px;
+  float: left;
+}
+
+.ImgEtudiant{
+  padding: 25px;
+}
+
+#containerMessage
+{
+  width: 20%;
+  height: 20%;
+  overflow: auto;
+}
+
+.messageBot
+{
+  color : green;
+}
+.messageClient
+{
+  color : orange;
+}
+.messageChoixReponse
+{
+  color : blue;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  height: 25px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  position : absolute;
+  top:50px;
+  left:1458px;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+#JC{
+  padding: 25px;
+  overflow:hidden;
+  -webkit-border-radius:25px;
+  -moz-border-radius:50px;
+  border-radius:200px;
+  float: left;
+  position : absolute;
+  top:50px;
+  left:1350px;
+}

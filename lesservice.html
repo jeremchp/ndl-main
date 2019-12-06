@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylelesservices.css" />
+    <title>Les différents services permettant de sortir de la précarité étudiante</title>
+    <META HTTP-EQUIV="Refresh" CONTENT="4; URL=file:///G:/Nuitdel'info/lesservice.html">
+    <!-- Penser à add le menu-->
+  </head>
+  <header>
+    <h1>Nuit de L'info Génération Miracle</h1>
+      <ul id="nav">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="fbdizisbz">Matchmaking</a></li>
+          <li><a href="./lesservice.html">Services disponibles</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./inscription.html">Inscription</a></li>
+      </ul>
+  </header>
+
+  <body>
+    <div id="corpsText">
+      <div class="Etudiants">
+        <h2>Les différentes aides proposées par l'Etat</h2>
+        <p  class="Description">Pour vous aider à sortirt de la précarité étudiante, l'Etat a mis en oeuvre plusieurs aides.
+        Celles-ci peuvent être pécunières, mais aussi psychlogiques.</p>
+        <div class="Services">
+          <div class="OneService">
+            <h2>Les bourses étudiantes</h2>
+            <div id="bourse" onclick=afficheBourse()>
+              <a href="#">Bourses</a>
+            </div>
+            <div id="bourseInfo" style="display:none">
+              <div class="sous-menu">
+                <a href="#">Sous Menu</a>
+              </div>
+              <div class="sous-menu">
+                <a href="#">Sous Menu</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="SecondService">
+            <h2>Les APLs</h2>
+            <div id="apl" onclick=afficheAPL()>
+              <a href="#">APL</a>
+            </div>
+            <div id="aplInfo" style="display:none">
+                <div class="sous-menu">
+                  <a href="#">Sous Menu</a>
+                </div>
+            <div class="sous-menu">
+                <a href="#">Sous Menu</a>
+          </div>
+        </div>
+      </div>
+
+        
+        <div class="SecondService">
+            <h2>Services d'aide psychologique</h2>
+            <div id="Services" onclick=afficheService()>
+              <a href="#">Cliquer pour dérouler</a>
+            </div>
+                <div id="serviceInfo" style="display:none">
+                    <div class="sous-menu">
+                        <a href="https://www.alcooliques-anonymes.fr/">Les alcooliques anonymes</a>
+                    </div>
+                    <div class="sous-menu">
+                            <a href="./JeanCloud.html">Vous manquez d'eau ?</a>
+                    </div>
+                </div>
+        </div>
+      
+      </div>
+        <div class="popup" onclick=showPopup()><img id="JC" src="./img/JeanCloud.png">
+          <span class="popuptext" id="myPopup">A Simple Popup!</span>
+        </div>
+      
+    <script type="text/javascript" src="messervices.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
+

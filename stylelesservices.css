@@ -1,0 +1,175 @@
+body
+{
+  /*background-color:white;*/
+  font-family : "Snell Roundhand", cursive;
+  background: url('./img/fond.webp');
+  background-repeat:no-repeat;
+  background-size: 100%;
+}
+
+
+header{
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+footer{
+  background-color: white;
+  text-align: center;
+  opacity: 45%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#nav
+{
+    font-size: 30px;
+    color : blue;
+    padding : 0;
+    margin : 0;
+    text-align: center;
+    
+}
+#nav li
+{
+    
+    display : inline;
+    list-style : none;
+}
+#nav a
+{
+    display : inline-block;
+    margin : 0 30px;
+    text-decoration:  none;
+    color:#db7414;
+}
+h1
+{
+    text-align: center;
+    color: #ecc427; 
+    font: bold 52px Helvetica, Arial, Sans-Serif;
+    text-shadow: 1px 1px #481c5a, 
+                 2px 2px #481c5a, 
+                 3px 3px #481c5a;   
+       
+    
+}
+h1:hover
+{
+    position: relative; 
+    top: -3px; 
+    left: -3px; 
+    text-shadow: 1px 1px #481c5a, 
+                 2px 2px #481c5a, 
+                 3px 3px #481c5a, 
+                 4px 4px #481c5a, 
+                 5px 5px #481c5a, 
+                 6px 6px #481c5a
+}
+
+#corpsText{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    /*background-color: white;*/
+    background-image:url('./img/daVinciCloud.svg');
+    
+    background-color: white;
+    height: 1100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*opacity: 90%;*/
+
+}
+#JC{
+    padding: 25px;
+    overflow:hidden;
+    -webkit-border-radius:25px;
+    -moz-border-radius:50px;
+    border-radius:200px;
+    float: left;
+    position : absolute;
+    top:50px;
+    left:1350px;
+  }
+
+  .messageBot
+{
+  color : green;
+}
+.messageClient
+{
+  color : orange;
+}
+.messageChoixReponse
+{
+  color : blue;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  height: 25px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  position : absolute;
+  top:50px;
+  left:1458px;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+body h2{
+  text-align: center;  
+}
